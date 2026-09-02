@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌕 ♥️MY home ♥️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #ffe6eb, #ffb3c1);
+            margin: 0;
+            padding: 15px;
+            text-align: center;
+            color: #4a0e17;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 380px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            line-height: 1.6;
+        }
+        h2, h3 { color: #ff4d6d; }
+        input {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ffccd5;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        img {
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .date-box {
+            background: #fff0f3;
+            border-right: 4px solid #ff4d6d;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: right;
+            border-radius: 8px;
+        }
+        .counter-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .counter-unit {
+            background: #ffe6eb;
+            padding: 8px;
+            border-radius: 10px;
+            min-width: 60px;
+        }
+        .counter-num {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff4d6d;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-box" class="card">
+        <h2>جاهزة؟ 🔐</h2>
+        <p>كل اللي بينا هنا ❤️</p>
+        <input type="password" id="passInput" placeholder="Password">
+        <br>
+        <button onclick="checkPass()">Unlock 💖</button>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        
+        <div class="card">
+            <h2>🌕 ♥️MY home ♥️</h2>
+            <p>عايز اكتب واعبر علي الي جويا من نحيتك بس مهما كتبت عمرو ما هيوفي حبي ليكي اد ايه ولا غلوتك ولا معزتك بس عايز اقولك انك مش حد دخل حياتي لا انتي نورتي حياتي خلتيها بقت احلي كل يوم بحمد ربنا انك في حياتي وبدعي انك تكوني ليا ومعايا طول العمر ومهما اتخنقنا وزعلتي مني بردو هحاول ومش هسيبك رغم ايه الي يحصل لا انتي مميزة مفيش منك غير واحدة علي الكوكب ومفيش شبهك ابدا ولو لفيت العالم دا كلو مش هلقي الي يشبه ضوفرك حتي لقيت فيكي كل حاجة بسم الله ماشاء الله انا قد يكون حظي كان وحش في حاجات كتير بس حسيت أن ربنا عوضني بيكي وانا مش هضيعك من ايدي واول مرة احب شخص كدا واحس أن مقدرش استغني عنو انتي أساسي في حياتي عمر ما حبيت حد زي ما حبيتك وعمر ما اتمنيت حد زي ما اتمنيتك وعمر ما بحس بزعل من نفسي أن زعلت حد زي ما بزعلك بس والله العظيم ما بقصدش ازعلك ازاي ازعل اغلي حاجة عندي كل الي قولتو دا ميوفيش بردك مدي حبي ليكي بس بحبك يا احلي حاجة في حياتي ❤️</p>
+        </div>
+
+        <div class="card">
+            <p>🎵 شغلي الأغنية واسمعي 🎵</p>
+            <audio controls id="myAudio" loop>
+                <source src="Ramy Sabry - Kelma.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="card">
+            <h3>بدايتنا 🗓️</h3>
+            <p>سوا من يوم 18/7/2026 ❤️</p>
+            <div class="counter-box">
+                <div class="counter-unit"><div class="counter-num" id="days">0</div>يوم</div>
+                <div class="counter-unit"><div class="counter-num" id="hours">0</div>ساعة</div>
+                <div class="counter-unit"><div class="counter-num" id="minutes">0</div>دقيقة</div>
+            </div>
+            
+            <hr style="border: 0.5px solid #ffe6eb; margin: 15px 0;">
+
+            <div class="date-box">
+                <b>18-07-2026 🗓️</b>
+                <div>أول يوم اتكلمنا فيه وش لوش ❤️</div>
+            </div>
+
+            <div class="date-box">
+                <b>21-07-2026 🗓️</b>
+                <div>أول يوم نتكلم في واتس 💬</div>
+            </div>
+
+            <div class="date-box">
+                <b>12-08-2026 🗓️</b>
+                <div>اليوم الي اعترفتلك فيه 💌</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>احلي حاجة خدتها منك ومكنتش مصدق نفسي ❤️</p>
+            <img src="1000098172.jpg" alt="الصورة الأولى">
+        </div>
+
+        <div class="card">
+            <p>الدبدوب الي كان نفسي ادهولك ولحد دلوقتي محتفظ بيه ومحدش هيخدو غيرك 🧸</p>
+            <img src="1000098175.jpg" alt="الصورة الثانية">
+        </div>
+
+        <div class="card">
+            <p>اكتر حاجة فرحتني وحسيستني أن مش مجرد حد في حياتك ✨</p>
+            <img src="1000098180.jpg" alt="الصورة الثالثة">
+        </div>
+
+        <div class="card">
+            <p>الاسم دا مسمتوهوش من فراغ انتي كل حاجة ليا ♥️</p>
+            <img src="1000098179.jpg" alt="الصورة الرابعة">
+        </div>
+
+        <div class="card" style="background: #fff0f3;">
+            <p>مش هسيبك تضيعي مهما حصل انت كنز وهدية من ربنا مستحيل اضيعها مني ومهما زعلتي هحاول تاني وتلات ورابع ومش هزهق عشان انا مش جي اهزر ولا العب انا بحبك ومقدرش استغني عنك واضحكي كدا يا ام فارس خلي وشك ينور وعلي فكرة أوت فيت انهاردة زي القمر 🌕 بحبك ♥️</p>
+        </div>
+
+    </div>
+
+    <script>
+        function checkPass() {
+            var password = document.getElementById("passInput").value;
+            if (password === "666") { 
+                document.getElementById("login-box").style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+                document.getElementById("myAudio").play();
+                startCounter();
+            } else {
+                alert("الباسورد غلط يا جميل! حاول تاني 😉");
+            }
+        }
+
+        function startCounter() {
+            const startDate = new Date("2026-07-18T00:00:00");
+            setInterval(() => {
+                const now = new Date();
+                const diff = now - startDate;
+                
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const minutes = Math.floor((diff / 1000 / 60) % 60);
+
+                document.getElementById("days").innerText = days;
+                document.getElementById("hours").innerText = hours;
+                document.getElementById("minutes").innerText = minutes;
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>
